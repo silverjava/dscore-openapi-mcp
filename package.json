@@ -1,0 +1,30 @@
+{
+  "name": "dscore-mcp-server",
+  "version": "1.0.0",
+  "description": "Monorepo for DS Core MCP servers",
+  "private": true,
+  "workspaces": [
+    "mcp-servers/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:patient": "npm run build --workspace=mcp-servers/dscore-openapi-patient",
+    "build:document": "npm run build --workspace=mcp-servers/dscore-openapi-document",
+    "build:dcmstudy": "npm run build --workspace=mcp-servers/dscore-openapi-dcmstudy",
+    "build:digitalimpression": "npm run build --workspace=mcp-servers/dscore-openapi-digitalimpression",
+    "clean": "npm run clean --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "mcp",
+    "dscore",
+    "openapi",
+    "monorepo"
+  ],
+  "author": "GenAPI",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
