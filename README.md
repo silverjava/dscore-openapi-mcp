@@ -139,8 +139,5 @@ The **[DS Core Open API Platform](https://open.dscore.com/)** provides comprehen
 
 ## License
 
-MIT
+MIT License
 
-## Author
-
-GenAPI
